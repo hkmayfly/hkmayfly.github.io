@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="./src/leaflet/leaflet.js"></script>
+    <script src="./src/jQuery/jquery-2.0.0.js"></script>
+    <script src="./src/bootstrap-5.2.2/js/bootstrap.min.js"></script>
+    <script src="./src/Leaflet.awesome-markers-2.0/dist/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" type="text/css" href="./src/leaflet/leaflet.css"/>
+    <link rel="stylesheet" type="text/css" href="./src/bootstrap-5.2.2/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="./src/bootstrap-5.2.2/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" type="text/css" href="./src/font-awesome-4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" type="text/css" href="./src/Leaflet.awesome-markers-2.0/dist/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" type="text/css" href="./src/leaflet.awesome.rotate/leaflet.awesome.rotate.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_68735b5ef0fbf661f2cc02d3cc4bb1f4 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="./src/leaflet.markercluster/dist/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" type="text/css" href="./src/leaflet.markercluster/dist/MarkerCluster.css"/>
+    <link rel="stylesheet" type="text/css" href="./src/leaflet.markercluster/dist/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_68735b5ef0fbf661f2cc02d3cc4bb1f4" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_68735b5ef0fbf661f2cc02d3cc4bb1f4 = L.map(
+                "map_68735b5ef0fbf661f2cc02d3cc4bb1f4",
+                {
+                    center: [39.952279, 116.342809],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 16,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_363da228360fbab24feb9950e8d40075 = L.tileLayer(
+                "https://webst01.is.autonavi.com/appmaptile?lang=zh_cn\u0026size=1\u0026scale=1\u0026style=7\u0026x={x}\u0026y={y}\u0026z={z}",
+                {
+  "minZoom": 0,
+  "maxZoom": 18,
+  "maxNativeZoom": 18,
+  "noWrap": false,
+  "attribution": "default",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_363da228360fbab24feb9950e8d40075.addTo(map_68735b5ef0fbf661f2cc02d3cc4bb1f4);
+        
+    
+            var poly_line_f35b0894bbbc0dd339c6c082138b0c0a = L.polyline(
+                [[37.0451, 115.665081], [37.170912, 115.686896], [37.238323, 115.693001], [37.206415, 115.575452], [36.871312, 115.501258], [37.065407, 115.661959], [37.065905, 115.677228], [37.056523, 115.669201], [37.065147, 115.667523], [37.066718, 115.669086], [37.066718, 115.669086], [37.066495, 115.666238], [37.065821, 115.673308], [22.815375, 113.548798], [22.96007, 113.22384], [22.960371, 113.246479], [35.922987, 117.954362], [35.931554, 117.935704], [35.896136, 117.949679], [35.985954, 117.54882], [35.983433, 117.642333], [35.994723, 117.543314], [35.994811, 117.545776], [35.992585, 117.54006], [35.989555, 117.551204], [35.992585, 117.54006], [36.027263, 117.587916], [35.985954, 117.54882], [35.758526, 117.466291], [36.019848, 117.536072], [36.015884, 117.546649], [36.004101, 117.593697], [35.991796, 117.547627], [35.901996, 117.742215], [35.873355, 117.758047], [35.918032, 117.743381], [35.915179, 117.745573], [35.980607, 117.641517], [35.909603, 117.750043], [35.911756, 117.746195], [35.912805, 117.740912], [35.911511, 117.73845], [35.90953, 117.768069], [35.902934, 117.739751], [35.908615, 117.740958], [35.907915, 117.743153], [35.905433, 117.744111], [35.900339, 117.746071], [24.647709, 118.240813]],
+                // {"bubblingMouseEvents": true, "color": "#0166ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#0166ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 6}
+                {
+  "minOpacity": 0.5,
+  "maxZoom": 17,
+  "radius": 15,
+  "blur": 12,
+}
+            ).addTo(map_68735b5ef0fbf661f2cc02d3cc4bb1f4);
+        
+    
+            var marker_cluster_9d35e4fa9fb5a9ef7a8434a631c1d8eb = L.markerClusterGroup(
+                {
+}
+            );
+        
+</script>
+</html>
